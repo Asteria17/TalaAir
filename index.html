@@ -58,26 +58,31 @@
       <div class="promo">
         <img src="./images/packages/BORACAY.jpg" alt="" class="promo1" />
         <img src="./images/packages/hover 1.jpg" alt="" class="hover" />
-        <a  class="cta"><button onclick="boracayForm.showModal()" class="pbtn">BOOK!</button></a>
+        <a class="cta"><button onclick="boracayForm.showModal()" class="pbtn">BOOK!</button></a>
       </div>
       <div class="promo">
-        <img src="./images/packages/BORACAY.jpg" alt="" class="promo1" />
-        <img src="./images/packages/hover 1.jpg" alt="" class="hover" />
-        <a href="" class="cta"><button class="pbtn">BOOK!</button></a>
+        <img src="./images/packages/2.png" alt="" class="promo1" />
+        <img src="./images/packages/hover2.jpg" alt="" class="hover" />
+        <a class="cta"><button onclick="palawanForm.showModal()" class="pbtn">BOOK!</button></a>
       </div>
-      <!-- <div>
-        <img src="./images/packages/2.png" alt="" />
-      </div> -->
-      <div>
-        <img src="./images/packages/3.png" alt="" />
+      <div class="promo">
+        <img src="./images/packages/3.png" alt="" class="promo1" />
+        <img src="./images/packages/hover3.jpg" alt="" class="hover" />
+        <a class="cta"><button onclick="boracayForm.showModal()" class="pbtn">BOOK!</button></a>
       </div>
-      <div><img src="./images/packages/4.png" alt="" />
+      <div class="promo">
+        <img src="./images/packages/4.png" alt="" class="promo1" />
+        <img src="./images/packages/hover4.jpg" alt="" class="hover" />
+        <a class="cta"><button onclick="boracayForm.showModal()" class="pbtn">BOOK!</button></a>
       </div>
+      
+
     </div>
 
-
-
     <!-- modal dialog  -->
+
+    <!-- Form 1  -->
+
     <dialog id="boracayForm" class="dialog">
       <div class="container">
 
@@ -112,9 +117,9 @@
         </form>
       
 
-        <!-- WAG MO GALAWIN ANG MGA NASA BABA TANG INA MO  -->
-        <button onclick="boracayForm.close()" autofocus class="pbtn">close</button>
-        <button onclick="thankYou.showModal()" autofocus class="pbtn">BOOK</button>
+        <!-- Buttons -->
+        <button onclick="boracayForm.close()" autofocus class="pbtn" type="button">close</button>
+        <button onclick="thankYou.showModal()" autofocus class="pbtn" type="button">BOOK</button>
       </div>
     </dialog>
 
@@ -122,8 +127,60 @@
       <!-- Thank you modal  -->
     <dialog id="thankYou" class="dialog">
       <h1>SALAMAT TANG INAMO</h1>
-      <button onclick="thankYou.close(); boracayForm.close();"  autofocus class="pbtn">close</button>
+      <button onclick="thankYou.close(); boracayForm.close();"  autofocus class="pbtn" type="button">close</button>
     </dialog>
+
+    <!-- Form 2  -->
+
+    <dialog id="palawanForm" class="dialog">
+      <div class="container">
+
+        <!-- form start -->
+        <h1>Online Booking Forms</h1>
+         
+        <form>
+          <label class="form">First Name</label>
+          <input type="text">
+           <label class="form">Last name</label>
+          <input type="text">
+          <label class="form">Email</label>
+          <input type="text" placeholder="ex:myname@example.com">
+          <label class="form">Phone Number</label>
+          <input type="text 
+          placeholder="(000) 000-0000>
+          <label class="form">departure date/time</la bel>
+          <input type="date" name="29-11-2024" id="date">
+          <input type="time" name="12:48" id="time">
+          <label class="form"class="pickupaddress">Pickup Address</label> 
+          <input type="text">
+          <label class="form">Destination Adress</label>
+          <input type="text">
+          <label class="">Journey Type</label>
+          <input type="text">
+          <label class="form">Number of Passenger</label>
+          <input type="number" name="0" id="input32"> 
+          <label class="form">Aditional Message</label>
+          <input type="text">
+          
+        
+        </form>
+      
+
+        <!-- Buttons -->
+        <button onclick="palawanForm.close()" autofocus class="pbtn" type="button">close</button>
+        <button onclick="thankYou2.showModal()" autofocus class="pbtn" type="button">BOOK</button>
+      </div>
+    </dialog>
+
+
+      <!-- Thank you modal  -->
+    <dialog id="thankYou2" class="dialog">
+      <h1>SALAMAT TANG INAMO</h1>
+      <button onclick="thankYou2.close(); palawanForm.close();"  autofocus class="pbtn" type="button">close</button>
+    </dialog>
+
+
+
     
   </body>
 </html>
