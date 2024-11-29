@@ -1,0 +1,245 @@
+/* Utilities  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+span {
+  color: rgb(44, 47, 204);
+}
+
+/* button  */
+/* button for hero  */
+
+.btn {
+  background-color: #fbeee0;
+  border: 2px solid #283673;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #283673;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  background-color: #283673;
+  color: #fbeee0;
+}
+
+.btn:active {
+  box-shadow: #080500 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+/* Navbar  */
+#navbar {
+  background: #283673;
+  color: #fff;
+  overflow: auto;
+  position: fixed;
+  width: 100%;
+}
+
+#navbar a {
+  color: aliceblue;
+  margin-right: 20px;
+}
+
+#navbar .logo {
+  float: left;
+  padding-top: 10px;
+  margin-left: 30px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #566794;
+  color: #63eae7;
+}
+
+img.logo {
+  width: 100px;
+}
+
+/* Hero Section  */
+
+#hero {
+  background: url("../images/hero.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+#hero .hero-content {
+  color: #0d5cf0;
+  text-align: center;
+  padding: 170px;
+}
+
+#hero .hero-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+#hero .hero-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+/* packages  */
+
+.packages {
+  padding: 30px;
+  margin: 30px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #283673;
+  border-radius: 30px;
+  gap: 40px;
+}
+
+.packages a {
+  width: 23%;
+}
+
+
+.packages img {
+  /* height: 30%; */
+  width: 100%;
+  border-radius: 20px;
+}
+   /* BUTTON FOR PACKAGES  */
+.pbtn {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.packages .hover,
+.packages button {
+  display: none;
+  
+}
+
+
+.packages .cta{
+  position: absolute;
+}
+
+.packages button{
+  position: relative;
+  left: -42px;
+  bottom: 300px;
+}
+
+.promo:hover button, .promo:hover .hover{
+  display: block;
+  
+}
+
+.promo:hover .promo1 {
+ display: none;
+}
+
+/* cards */
+.card {
+  padding: 25px;
+  margin: 30px;
+  background-color: #283673;
+  border-radius: 20px;
+}
+
+/* Modal  */
+
+.dialog {
+  margin: auto;
+  padding: 50px 50px;
+}
+
+/* Form  */
+
+form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px
+
+
+}                                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+

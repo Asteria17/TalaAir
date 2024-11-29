@@ -1,0 +1,129 @@
+<!-- HOME PAGE  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>TALA AIR HOMEPAGE</title>
+  </head>
+
+  <body>
+    <!-- Navbar  -->
+    <header>
+      <nav id="navbar">
+        <h1 class="logo"><a href="index.html"></a>TalaAir</h1>
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Hero Section  -->
+    <div id="hero">
+      <div class="hero-content">
+        <h1>
+          Fly with Confidence, Explore the Skies of Philippines with
+          <span class="text-primary"> TALA AIR</span>
+        </h1>
+        <p class="lead"></p>
+        <a class="btn" href="about.html">BOOK NOW!</a>
+      </div>
+    </div>
+    <br />
+    <!-- PACKAGES  -->
+    <div class="packages">
+      <!-- <table>
+        <tr>
+          <td><a href=""><img src="./images/packages/BORACAY.jpg" alt="" style="width: 11rem;"></a></td>
+          <td><a href=""><img src="./images/packages/2.png" alt="" style="width: 11rem;"></a></td>
+          <td><a href=""><img src="./images/packages/3.png" alt="" style="width: 11rem;"></a></td>
+          <td><a href=""><img src="./images/packages/4.png" alt="" style="width: 11rem;"></a></td>
+        </tr>
+        </table> -->
+
+      <div class="promo">
+        <img src="./images/packages/BORACAY.jpg" alt="" class="promo1" />
+        <img src="./images/packages/hover 1.jpg" alt="" class="hover" />
+        <a  class="cta"><button onclick="boracayForm.showModal()" class="pbtn">BOOK!</button></a>
+      </div>
+      <div class="promo">
+        <img src="./images/packages/BORACAY.jpg" alt="" class="promo1" />
+        <img src="./images/packages/hover 1.jpg" alt="" class="hover" />
+        <a href="" class="cta"><button class="pbtn">BOOK!</button></a>
+      </div>
+      <!-- <div>
+        <img src="./images/packages/2.png" alt="" />
+      </div> -->
+      <div>
+        <img src="./images/packages/3.png" alt="" />
+      </div>
+      <div><img src="./images/packages/4.png" alt="" />
+      </div>
+    </div>
+
+
+
+    <!-- modal dialog  -->
+    <dialog id="boracayForm" class="dialog">
+      <div class="container">
+
+        <!-- form start -->
+        <h1>Online Booking Forms</h1>
+         
+        <form>
+          <label class="form">First Name</label>
+          <input type="text">
+           <label class="form">Last name</label>
+          <input type="text">
+          <label class="form">Email</label>
+          <input type="text" placeholder="ex:myname@example.com">
+          <label class="form">Phone Number</label>
+          <input type="text 
+          placeholder="(000) 000-0000>
+          <label class="form">departure date/time</la bel>
+          <input type="date" name="29-11-2024" id="date">
+          <input type="time" name="12:48" id="time">
+          <label class="form"class="pickupaddress">Pickup Address</label> 
+          <input type="text">
+          <label class="form">Destination Adress</label>
+          <input type="text">
+          <label class="">Journey Type</label>
+          <input type="text">
+          <label class="form">Number of Passenger</label>
+          <input type="number" name="0" id="input32"> 
+          <label class="form">Aditional Message</label>
+          <input type="text">
+          
+        
+        </form>
+      
+
+        <!-- WAG MO GALAWIN ANG MGA NASA BABA TANG INA MO  -->
+        <button onclick="boracayForm.close()" autofocus class="pbtn">close</button>
+        <button onclick="thankYou.showModal()" autofocus class="pbtn">BOOK</button>
+      </div>
+    </dialog>
+
+
+      <!-- Thank you modal  -->
+    <dialog id="thankYou" class="dialog">
+      <h1>SALAMAT TANG INAMO</h1>
+      <button onclick="thankYou.close(); boracayForm.close();"  autofocus class="pbtn">close</button>
+    </dialog>
+    
+  </body>
+</html>
