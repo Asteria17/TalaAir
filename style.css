@@ -12,6 +12,7 @@ a {
   font-family: "Yellowtail", cursive;
   font-weight: 400;
   font-style: normal;
+  text-decoration: none;
 }
 
 p {
@@ -19,6 +20,7 @@ p {
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  text-decoration: none;
 }
 
 body {
@@ -28,6 +30,20 @@ body {
 span {
   color: rgb(44, 47, 204);
 }
+
+/* animations  */
+
+@keyframes fade-out {
+  from {
+    opacity: 0;
+    scale: .5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
 
 /* button  */
 /* button for hero  */
@@ -61,11 +77,32 @@ span {
   transform: translate(2px, 2px);
 }
 
+/* BUTTON FOR PACKAGES  */
+.pbtn {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  text-decoration: none;
+}
+
 /* for up button  */
 
-.up-button {
-
-}
 
 /* Navbar  */
 #navbar {
@@ -74,6 +111,7 @@ span {
   overflow: auto;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 #navbar a {
@@ -135,20 +173,8 @@ img.logo {
   line-height: 1.7em;
 }
 
+
 /* packages  */
-@keyframes fade-out {
-  from {
-    opacity: 0;
-    scale: .5;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
-}
-
-
-
 .packages {
   animation: fade-out linear;
   animation-timeline: view();
@@ -174,28 +200,12 @@ img.logo {
   width: 100%;
   border-radius: 20px;
 }
-   /* BUTTON FOR PACKAGES  */
-.pbtn {
-  background: #5E5DF0;
-  border-radius: 999px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
-  box-sizing: border-box;
-  color: #FFFFFF;
+   
+/* .pbtn a{
   cursor: pointer;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-  word-break: break-word;
-  border: 0;
-}
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+} */
 
 .packages .hover,
 .packages button {
@@ -306,13 +316,16 @@ option {
   
 }
 
+/* drop down list  */
 
 .list-choice{
   width: 400px;
   margin:1em auto;
   position: relative;
-  cursor: pointer;  
+  cursor: pointer;
 }
+
+
 .list-choice input[type="radio"]{
   position:absolute;
   left:-9999px;
@@ -385,12 +398,109 @@ border-radius: 0;
 max-height: 540px;
 }
 
-#thankYou {
-  font-size: 30px;
+/* drop down list for payment  */
+
+.list-choice-payment{
+  width: 300px;
+  margin: 1em auto;
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
   font-weight: bolder;
+  font-family: "Yellowtail", cursive;
 }
 
 
+.list-choice-payment input[type="radio"]{
+  position:absolute;
+  left:-9999px;
+}
+
+
+/* payment list  */
+.list-choice-payment-title {
+width: 100%;
+display: block;
+background:#283673;
+text-align: center;
+padding: 1em 1em;
+box-sizing: border-box;
+color: #FFF;
+text-shadow: 0 1px 0 #CACACA;
+border-radius: 0.2em;
+}
+
+.list-choice-payment input[type="radio"] + span {
+color: #283673;
+background: #D8D8D8;
+padding: 0.55em 1em;
+display: block;
+text-align: center;
+box-sizing: border-box;
+cursor: pointer;
+width: 100%;
+}
+
+.list-choice-payment-objects {
+position: absolute;
+top: 0;
+padding-top: 3em;
+box-sizing: border-box;
+width: 100%;
+overflow: hidden;
+max-height: 0;
+transition: all 250ms ease;
+}
+
+.list-choice-payment:hover .list-choice-payment-objects  input[type="radio"] + span {
+position: relative;
+top: 0;
+bottom: 0;
+transition: all 250ms ease-in-out;
+}
+
+.list-choice-payment:hover input[type="radio"] + span:hover {
+background: #74D68E;
+}
+
+.list-choice-payment:hover input[type="radio"]:checked + span:hover {
+background: #74D68E;
+}
+
+.list-choice-payment input[type="radio"]:checked + span {
+background: #74a7d6;
+position: absolute;
+top: 0;
+border-radius: 0.2em;
+}
+
+.list-choice-payment:hover input[type="radio"]:checked + span {
+border-radius: 0;
+}
+
+.list-choice-payment:hover .list-choice-payment-objects label:nth-last-of-type(1) input[type="radio"]:checked + span{
+  border-radius:0 0 0.2em 0.2em;
+}
+
+.list-choice-payment:hover .list-choice-payment-objects {
+max-height: 540px;
+}
+
+.list-choice-payment:hover .list-choice-payment-objects .choose {
+  display: none;
+}
+
+/* container for famous sites  */
+.container-famous-sites {
+  background: hsla(0, 0%, 70%, 0.668);
+  padding: 2rem 2rem;
+  margin: auto 4rem;
+  border-radius: 20px;
+  border-color:hsla(0, 0%, 70%, 0.278);
+  border-width: 2px;
+  border-style: inset;
+
+}
 
 
 

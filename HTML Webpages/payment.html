@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <title>Payment</title>
+</head>
+<body>
+    <div class="container">
+
+              <div class="card-form" id="top">
+                <form action="../index.html " onsubmit="alert('CONFIRM PAYMENT?'); ">
+                  <div class="list-choice-payment" >
+              <div class="list-choice-payment-title">Mode of Payment</div>
+              <div class="list-choice-payment-objects">
+                <label class="choose">
+                  <input  type="radio" name="payment" required>
+                  <span>Choose Payment Method!</span>
+                </label>
+                <label>
+                  <input type="radio" name="payment" />                         
+                  <span>
+                    <img src="../images/svg/PayPal.svg" alt=""></span>
+                </label>
+                <label>
+                  <input type="radio" name="payment" />                         
+                  <span><img src="../images/svg/Paymaya_logo.svg" alt=""></span>
+                </label>
+                <label>
+                  <input type="radio" name="payment" />                         
+                  <span><img src="../images/svg/GCash_logo.svg" alt=""></span>
+                </label>
+                <label>
+                  <input type="radio" name="payment" />                         
+                  <span><img src="../images/svg/Visa_Inc._logo.svg" alt=""></span>
+                </label>
+                <label>
+                  <input type="radio" name="payment" />                         
+                  <span><img src="../images/svg/Mastercard-Logo.wine.svg" alt=""><p>MASTERCARD</p></span>
+                </label>
+                <label>
+                  <input type="radio" name="payment" />                         
+                  <span><img src="../images/svg/BDOUY.svg" alt=""></span>
+                </label>
+                
+              </div>
+            </div>
+            
+            <label class="form">Account/Card Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
+                  <label class="form" >First Name</label>
+                    <input type="text" required placeholder="First Name">
+                  <label class="form" required>Last name</label>
+                    <input type="text">
+                  <label class="form" required>Email</label>
+                    <input type="text" placeholder="ex:myname@example.com">
+
+
+              <!-- <button type="submit" class="pbtn"> <a href="../index.html">Pay Now</a></button> -->
+                <!-- <a href="../index.html" class="pbtn" ><button class="pbtn" type="submit">Pay Now</button></a>
+            </div></a>
+             -->
+            <input type="submit" value="Pay Now"  >
+
+            </form>
+
+</body>
+</html>

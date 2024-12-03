@@ -46,31 +46,59 @@
     <br />
     <!-- PACKAGES  -->
     <div class="packages">
+      <!-- promo 1 -->
       <div class="promo">
         <img src="./images/packages/BORACAY.jpg" alt="" class="promo1" />
         <img src="./images/packages/hover 1.jpg" alt="" class="hover" />
         <a class="cta"><button onclick="boracayForm.showModal(); location.href='#top';" class="pbtn">BOOK!</button></a>
       </div>
+
+      <!-- promo 2 -->
       <div class="promo">
         <img src="./images/packages/2.png" alt="" class="promo1" />
         <img src="./images/packages/hover2.jpg" alt="" class="hover" />
-        <a class="cta"><button onclick="palawanForm.showModal()" class="pbtn">BOOK!</button></a>
+        <a class="cta"><button onclick="palawancityForm.showModal(); location.href='#top2'" class="pbtn">BOOK!</button></a>
       </div>
+
+      <!-- promo 3 -->
       <div class="promo">
         <img src="./images/packages/3.png" alt="" class="promo1" />
         <img src="./images/packages/hover3.jpg" alt="" class="hover" />
-        <a class="cta"><button onclick="boracayForm.showModal()" class="pbtn">BOOK!</button></a>
+        <a class="cta"><button onclick="puertoForm.showModal(); location.href='#top3'" class="pbtn">BOOK!</button></a>
       </div>
+
+      <!-- promo 4 -->
       <div class="promo">
         <img src="./images/packages/4.png" alt="" class="promo1" />
         <img src="./images/packages/hover4.jpg" alt="" class="hover" />
-        <a class="cta"><button onclick="boracayForm.showModal()" class="pbtn">BOOK!</button></a>
+        <a class="cta"><button onclick="siargaoForm.showModal(); location.href='#top4'" class="pbtn">BOOK!</button></a>
       </div>
       
       
 
     </div>
-    <a href="#" class="up-button"><button class="pbtn">go to the top</button></a>
+
+    <div class="container-famous-sites">
+      <h1>Famous Sites in the Philippines</h1>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <a href="#" class="up-button"><button class="pbtn">go to the top</button></a> -->
 
     <!-- modal dialog  -->
     <!-- Form 1 BORACAY -->
@@ -131,35 +159,22 @@
             <label class="form">Total Payment</label>
               <input type="text" value="₱6,545" readonly>
           </form>
-          
-        
-        </form>
       
 
         <!-- Buttons -->
-       <button onclick=" boracayForm.close()" autofocus class="pbtn" type="reset">close</button>
+       <button onclick=" boracayForm.close()" autofocus class="pbtn" type="reset">CLOSE</button>
         <button onclick="thankYou.showModal(); boracayForm.close()" autofocus class="pbtn" type="reset">BOOK</button>
       </div>
     </dialog>
 
-
-      <!-- Thank you modal BORACAY  -->
-    <dialog id="thankYou" class="dialog">
-      <h1>Thank You For Trusting <br><span>TalaAir</span> </h1>
-      <button onclick="thankYou.close(); boracayForm.close();"  autofocus class="pbtn" type="button">Cancel Booking</button>
-      <br>
-      <a href=""><button class="pbtn">Continue to Payment</button></a>
-    </dialog>
-
-    <!-- Form 2  -->
-
-    <dialog id="palawanForm" class="dialog">
+ <!-- Form 2  -->
+    <dialog id="palawancityForm" class="dialog">
       <div class="container">
-         
-         <div class="card-form">
+
+        <div class="card-form" id="top2">
           <form>
-            <label class="form" class="form-text">First Name</label>
-              <input type="text">
+            <label class="form" >First Name</label>
+              <input type="text" autocomplete="given-name" required placeholder="First Name">
             <label class="form">Last name</label>
               <input type="text">
             <label class="form">Email</label>
@@ -203,29 +218,161 @@
             <label class="form">Pickup Address (Shuttle Service)</label> 
               <input type="text" placeholder="Full Address">
             <label class="form">Destination</label>
-              <input type="text" value="BORACAY">
+              <input type="text" value="PALAWAN CITY" readonly>
             <label class="">Journey Type</label>
               <input type="text" value="One Way Trip" readonly>
             <label class="form">Total Payment</label>
-              <input type="text" value="₱6,545" readonly>
+              <input type="text" value="₱5,689" readonly>
           </form>
-        </div>
       
 
-        <!-- Buttons -->
-        <button onclick="palawanForm.close()" autofocus class="pbtn" type="button">close</button>
-        <button onclick="thankYou2.showModal()" autofocus class="pbtn" type="button">BOOK</button>
+        <!-- Buttons 2-->
+      <button onclick=" palawancityForm.close()" autofocus class="pbtn" type="reset">CLOSE</button>
+        <button onclick="thankYou.showModal(); palawancityForm.close()" autofocus class="pbtn" type="reset">BOOK</button>
       </div>
     </dialog>
-
+  
+      <!-- FORM 3 -->
+    <dialog id="puertoForm" class="dialog">
+        <div class="container">
+      
+          <div class="card-form" id="top3">
+            <form>
+              <label class="form" >First Name</label>
+                <input type="text" autocomplete="given-name" required placeholder="First Name">
+              <label class="form">Last name</label>
+                <input type="text">
+              <label class="form">Email</label>
+                <input type="text" placeholder="ex:myname@example.com">
+              <label class="form">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="ex:0912-345-6789" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
+              <label class="form" >Departure date/time</la bel>
+              <div class="list-choice">
+                <div class="list-choice-title">Available Schedules</div>
+                <div class="list-choice-objects">
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-07-2025 at 4:00 A.M PHT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-07-2025 at 4:00 A.M PHT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-25-2025 at 4:00 A.M PHT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-25-2025 at 4:00 A.M PHT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-25-2025 at 4:00 P.M PHT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-28-2025 at 4:00 A.M PHT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-28-2025 at 4:00 P.M PHT</span>
+                  </label>
+                </div>
+              </div>
+              <label class="form">Pickup Address (Shuttle Service)</label> 
+                <input type="text" placeholder="Full Address">
+              <label class="form">Destination</label>
+                <input type="text" value="PUERTO PRINCESA" readonly>
+              <label class="">Journey Type</label>
+                <input type="text" value="One Way Trip" readonly>
+              <label class="form">Total Payment</label>
+                <input type="text" value="₱6,545" readonly>
+            </form>
+        
+      
+          <!-- Buttons 3-->
+         <button onclick=" puertoForm.close()" autofocus class="pbtn" type="reset">CLOSE</button>
+          <button onclick="thankYou.showModal(); puertoForm.close()" autofocus class="pbtn" type="reset">BOOK</button>
+        </div>
+    </dialog>
+    
+      <!-- FORM 4 -->
+      <dialog id="siargaoForm" class="dialog">
+        <div class="container">
+      
+          <div class="card-form" id="top4">
+            <form>
+              <label class="form" >First Name</label>
+                <input type="text" autocomplete="given-name" required placeholder="First Name">
+              <label class="form">Last name</label>
+                <input type="text">
+              <label class="form">Email</label>
+                <input type="text" placeholder="ex:myname@example.com">
+              <label class="form">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="ex:0912-345-6789" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
+              <label class="form" >Departure date/time</la bel>
+              <div class="list-choice">
+                <div class="list-choice-title">Available Schedules</div>
+                <div class="list-choice-objects">
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-07-2025 at 4:00 A.M PHT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-07-2025 at 4:00 A.M PHT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-25-2025 at 4:00 A.M PHT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-25-2025 at 4:00 A.M PHT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-25-2025 at 4:00 P.M PHT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-28-2025 at 4:00 A.M PHT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="month"/>                         
+                    <span>02-28-2025 at 4:00 P.M PHT</span>
+                  </label>
+                </div>
+              </div>
+              <label class="form">Pickup Address (Shuttle Service)</label> 
+                <input type="text" placeholder="Full Address">
+              <label class="form">Destination</label>
+                <input type="text" value="SIARGAO" readonly>
+              <label class="">Journey Type</label>
+                <input type="text" value="One Way Trip" readonly>
+              <label class="form">Total Payment</label>
+                <input type="text" value="₱5,750" readonly>
+            </form>
+        
+      
+          <!-- Buttons 4 -->
+         <button onclick=" siargaoForm.close()" autofocus class="pbtn" type="reset">CLOSE</button>
+          <button onclick="thankYou.showModal(); siargaoForm.close()" autofocus class="pbtn" type="reset">BOOK</button>
+        </div>
+      </dialog>
 
       <!-- Thank you modal  -->
-    <dialog id="thankYou2" class="dialog">
-      <h1>SALAMAT TANG INAMO</h1>
-      <button onclick="thankYou2.close(); palawanForm.close();"  autofocus class="pbtn" type="button">close</button>
+    <dialog id="thankYou" class="dialog">
+      <h1>Thank You For Trusting <br><span>TalaAir</span> </h1>
+      <button onclick="thankYou.close();"  autofocus class="pbtn" type="button">Cancel Booking</button>
+      <br> <br>
+      <a href="./HTML Webpages/payment.html"><button class="pbtn">Continue to Payment</button></a>
     </dialog>
 
+   
 
+    
 
     
   </body>
