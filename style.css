@@ -61,6 +61,12 @@ span {
   transform: translate(2px, 2px);
 }
 
+/* for up button  */
+
+.up-button {
+
+}
+
 /* Navbar  */
 #navbar {
   background: #283673;
@@ -130,8 +136,23 @@ img.logo {
 }
 
 /* packages  */
+@keyframes fade-out {
+  from {
+    opacity: 0;
+    scale: .5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
 
 .packages {
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
   padding: 30px;
   margin: 30px;
   align-items: center;
@@ -205,9 +226,30 @@ img.logo {
 /* cards */
 .card {
   padding: 25px;
-  margin: 30px;
+  margin: 180px;
   background-color: #283673;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+.card-form {
+  background: aliceblue;
+  padding: 3% 10%;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  font-size: 3vmin;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
 }
 
 /* Modal  */
@@ -215,24 +257,138 @@ img.logo {
 .dialog {
   margin: auto;
   padding: 50px 50px;
+  background-color: aliceblue;
+  border-style: groove;
+  border-width: 7px;
+  border-color: wheat;
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+  overflow-y: scroll;
+  
 }
+
+.dialog::-webkit-scrollbar {
+  display: none;
+}
+
 
 /* Form  */
 
 form input {
   display: block;
   width: 100%;
-  margin-bottom: 20px
+  margin-bottom: 22px;
+  width: 25rem;
+  height: 2rem;
+ font-family: "Raleway", sans-serif;
+  font-size: large;
+  font-weight: bolder;
+  
+}              
+
+::placeholder {
+  font-size: large;
+  font-family: "Yellowtail", cursive;
+}
+
+select 
+option {
+  width: 2rem;
+  height: 2rem;
+}
+
+.form {
+  color: #283673;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  
+}
 
 
-}                                                        
+.list-choice{
+  width: 400px;
+  margin:1em auto;
+  position: relative;
+  cursor: pointer;  
+}
+.list-choice input[type="radio"]{
+  position:absolute;
+  left:-9999px;
+}
 
+.list-choice-title {
+width: 100%;
+display: block;
+background:#283673;
+text-align: center;
+padding: 0.55em 1em;
+box-sizing: border-box;
+color: #FFF;
+text-shadow: 0 1px 0 #CACACA;
+border-radius: 0.2em;
+}
 
+.list-choice input[type="radio"] + span {
+color: #283673;
+background: #D8D8D8;
+padding: 0.55em 1em;
+display: block;
+text-align: center;
+box-sizing: border-box;
+cursor: pointer;
+width: 100%;
+}
 
+.list-choice-objects {
+position: absolute;
+top: 0;
+padding-top: 2.1em;
+box-sizing: border-box;
+width: 100%;
+overflow: hidden;
+max-height: 0;
+transition: all 250ms ease;
+}
 
+.list-choice:hover .list-choice-objects  input[type="radio"] + span {
+position: relative;
+top: 0;
+transition: all 250ms ease-in-out;
+}
 
+.list-choice:hover input[type="radio"] + span:hover {
+background: #74D68E;
+}
 
+.list-choice:hover input[type="radio"]:checked + span:hover {
+background: #74D68E;
+}
 
+.list-choice input[type="radio"]:checked + span {
+background: #74a7d6;
+position: absolute;
+top: 0em;
+border-radius: 0.2em;
+}
+
+.list-choice:hover input[type="radio"]:checked + span {
+border-radius: 0;
+}
+
+.list-choice:hover .list-choice-objects label:nth-last-of-type(1) input[type="radio"]:checked + span{
+  border-radius:0 0 0.2em 0.2em;
+}
+
+.list-choice:hover .list-choice-objects {
+max-height: 540px;
+}
+
+#thankYou {
+  font-size: 30px;
+  font-weight: bolder;
+}
 
 
 
