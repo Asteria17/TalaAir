@@ -36,14 +36,13 @@ span {
 @keyframes fade-out {
   from {
     opacity: 0;
-    scale: .5;
+    scale: 0.5;
   }
   to {
     opacity: 1;
     scale: 1;
   }
 }
-
 
 /* button  */
 /* button for hero  */
@@ -79,11 +78,11 @@ span {
 
 /* BUTTON FOR PACKAGES  */
 .pbtn {
-  background: #5E5DF0;
+  background: #5e5df0;
   border-radius: 999px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -103,13 +102,11 @@ span {
 
 /* for up button  */
 
-
 /* Navbar  */
 #navbar {
   background: #283673;
   color: #fff;
   overflow: auto;
-  position: fixed;
   width: 100%;
   z-index: 2;
 }
@@ -173,7 +170,6 @@ img.logo {
   line-height: 1.7em;
 }
 
-
 /* packages  */
 .packages {
   animation: fade-out linear;
@@ -194,13 +190,12 @@ img.logo {
   width: 23%;
 }
 
-
 .packages img {
   /* height: 30%; */
   width: 100%;
   border-radius: 20px;
 }
-   
+
 /* .pbtn a{
   cursor: pointer;
   font-family: "Raleway", sans-serif;
@@ -210,27 +205,25 @@ img.logo {
 .packages .hover,
 .packages button {
   display: none;
-  
 }
 
-
-.packages .cta{
+.packages .cta {
   position: absolute;
 }
 
-.packages button{
+.packages button {
   position: relative;
   left: -42px;
   bottom: 300px;
 }
 
-.promo:hover button, .promo:hover .hover{
+.promo:hover button,
+.promo:hover .hover {
   display: block;
-  
 }
 
 .promo:hover .promo1 {
- display: none;
+  display: none;
 }
 
 /* cards */
@@ -244,7 +237,6 @@ img.logo {
   align-items: center;
   flex-direction: column;
   text-align: center;
-
 }
 .card-form {
   background: aliceblue;
@@ -259,7 +251,6 @@ img.logo {
   align-items: center;
   flex-direction: column;
   text-align: center;
-
 }
 
 /* Modal  */
@@ -275,13 +266,11 @@ img.logo {
   text-align: center;
   overflow: hidden;
   overflow-y: scroll;
-  
 }
 
 .dialog::-webkit-scrollbar {
   display: none;
 }
-
 
 /* Form  */
 
@@ -291,19 +280,17 @@ form input {
   margin-bottom: 22px;
   width: 25rem;
   height: 2rem;
- font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: large;
   font-weight: bolder;
-  
-}              
+}
 
 ::placeholder {
   font-size: large;
   font-family: "Yellowtail", cursive;
 }
 
-select 
-option {
+select option {
   width: 2rem;
   height: 2rem;
 }
@@ -313,94 +300,96 @@ option {
   font-weight: bolder;
   font-size: 20px;
   font-family: "Raleway", sans-serif;
-  
 }
 
 /* drop down list  */
 
-.list-choice{
+.list-choice {
   width: 400px;
-  margin:1em auto;
+  margin: 1em auto;
   position: relative;
   cursor: pointer;
 }
 
-
-.list-choice input[type="radio"]{
-  position:absolute;
-  left:-9999px;
+.list-choice input[type="radio"] {
+  position: absolute;
+  left: -9999px;
 }
 
 .list-choice-title {
-width: 100%;
-display: block;
-background:#283673;
-text-align: center;
-padding: 0.55em 1em;
-box-sizing: border-box;
-color: #FFF;
-text-shadow: 0 1px 0 #CACACA;
-border-radius: 0.2em;
+  width: 100%;
+  display: block;
+  background: #283673;
+  text-align: center;
+  padding: 0.55em 1em;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 0 1px 0 #cacaca;
+  border-radius: 0.2em;
 }
 
 .list-choice input[type="radio"] + span {
-color: #283673;
-background: #D8D8D8;
-padding: 0.55em 1em;
-display: block;
-text-align: center;
-box-sizing: border-box;
-cursor: pointer;
-width: 100%;
+  color: #283673;
+  background: #d8d8d8;
+  padding: 0.55em 1em;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
 }
 
 .list-choice-objects {
-position: absolute;
-top: 0;
-padding-top: 2.1em;
-box-sizing: border-box;
-width: 100%;
-overflow: hidden;
-max-height: 0;
-transition: all 250ms ease;
+  position: absolute;
+  top: 0;
+  padding-top: 2.1em;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 250ms ease;
 }
 
-.list-choice:hover .list-choice-objects  input[type="radio"] + span {
-position: relative;
-top: 0;
-transition: all 250ms ease-in-out;
+.list-choice:hover .list-choice-objects input[type="radio"] + span {
+  position: relative;
+  top: 0;
+  transition: all 250ms ease-in-out;
 }
 
 .list-choice:hover input[type="radio"] + span:hover {
-background: #74D68E;
+  background: #74d68e;
 }
 
 .list-choice:hover input[type="radio"]:checked + span:hover {
-background: #74D68E;
+  background: #74d68e;
 }
 
 .list-choice input[type="radio"]:checked + span {
-background: #74a7d6;
-position: absolute;
-top: 0em;
-border-radius: 0.2em;
+  background: #74a7d6;
+  position: absolute;
+  top: 0em;
+  border-radius: 0.2em;
 }
 
 .list-choice:hover input[type="radio"]:checked + span {
-border-radius: 0;
+  border-radius: 0;
 }
 
-.list-choice:hover .list-choice-objects label:nth-last-of-type(1) input[type="radio"]:checked + span{
-  border-radius:0 0 0.2em 0.2em;
+.list-choice:hover
+  .list-choice-objects
+  label:nth-last-of-type(1)
+  input[type="radio"]:checked
+  + span {
+  border-radius: 0 0 0.2em 0.2em;
 }
 
 .list-choice:hover .list-choice-objects {
-max-height: 540px;
+  max-height: 540px;
 }
 
 /* drop down list for payment  */
 
-.list-choice-payment{
+.list-choice-payment {
   width: 300px;
   margin: 1em auto;
   position: relative;
@@ -410,80 +399,85 @@ max-height: 540px;
   font-family: "Yellowtail", cursive;
 }
 
-
-.list-choice-payment input[type="radio"]{
-  position:absolute;
-  left:-9999px;
+.list-choice-payment input[type="radio"] {
+  position: absolute;
+  left: -9999px;
 }
-
 
 /* payment list  */
 .list-choice-payment-title {
-width: 100%;
-display: block;
-background:#283673;
-text-align: center;
-padding: 1em 1em;
-box-sizing: border-box;
-color: #FFF;
-text-shadow: 0 1px 0 #CACACA;
-border-radius: 0.2em;
+  width: 100%;
+  display: block;
+  background: #283673;
+  text-align: center;
+  padding: 1em 1em;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 0 1px 0 #cacaca;
+  border-radius: 0.2em;
 }
 
 .list-choice-payment input[type="radio"] + span {
-color: #283673;
-background: #D8D8D8;
-padding: 0.55em 1em;
-display: block;
-text-align: center;
-box-sizing: border-box;
-cursor: pointer;
-width: 100%;
+  color: #283673;
+  background: #d8d8d8;
+  padding: 0.55em 1em;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
 }
 
 .list-choice-payment-objects {
-position: absolute;
-top: 0;
-padding-top: 3em;
-box-sizing: border-box;
-width: 100%;
-overflow: hidden;
-max-height: 0;
-transition: all 250ms ease;
+  position: absolute;
+  top: 0;
+  padding-top: 3em;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 250ms ease;
 }
 
-.list-choice-payment:hover .list-choice-payment-objects  input[type="radio"] + span {
-position: relative;
-top: 0;
-bottom: 0;
-transition: all 250ms ease-in-out;
+.list-choice-payment:hover
+  .list-choice-payment-objects
+  input[type="radio"]
+  + span {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  transition: all 250ms ease-in-out;
 }
 
 .list-choice-payment:hover input[type="radio"] + span:hover {
-background: #74D68E;
+  background: #74d68e;
 }
 
 .list-choice-payment:hover input[type="radio"]:checked + span:hover {
-background: #74D68E;
+  background: #74d68e;
 }
 
 .list-choice-payment input[type="radio"]:checked + span {
-background: #74a7d6;
-position: absolute;
-top: 0;
-border-radius: 0.2em;
+  background: #74a7d6;
+  position: absolute;
+  top: 0;
+  border-radius: 0.2em;
 }
 
 .list-choice-payment:hover input[type="radio"]:checked + span {
-border-radius: 0;
+  border-radius: 0;
 }
 
-.list-choice-payment:hover .list-choice-payment-objects label:nth-last-of-type(1) input[type="radio"]:checked + span{
-  border-radius:0 0 0.2em 0.2em;
+.list-choice-payment:hover
+  .list-choice-payment-objects
+  label:nth-last-of-type(1)
+  input[type="radio"]:checked
+  + span {
+  border-radius: 0 0 0.2em 0.2em;
 }
 
 .list-choice-payment:hover .list-choice-payment-objects {
-max-height: 540px;
+  max-height: 540px;
 }
 
 .list-choice-payment:hover .list-choice-payment-objects .choose {
@@ -496,16 +490,9 @@ max-height: 540px;
   padding: 2rem 2rem;
   margin: auto 4rem;
   border-radius: 20px;
-  border-color:hsla(0, 0%, 70%, 0.278);
+  border-color: hsla(0, 0%, 70%, 0.278);
   border-width: 2px;
   border-style: inset;
-
 }
-
-
-
-
-
-  
 
 
