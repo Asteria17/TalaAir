@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/stylesAbout.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css"
+      >
 
     <title>About TalaAir</title>
     
@@ -28,7 +31,7 @@
 
     <section>
        <div class="heading">
-        <h1>About Us</h1>
+        <h1>About Us  <i class="fa-regular fa-plane-departure" style="color: #002f80;"></i></h1>
         <hr>
             <div class="heading-content">
                 <p>Welcome to TalaAir, where innovation meets excellence in air transportation. Established with a mission to revolutionize the aviation industry, TalaAir is committed to providing safe, reliable, and efficient air travel solutions tailored to meet the needs of modern travelers and businesses.</p>
@@ -69,14 +72,50 @@
 
 
     <div class="members">
-        <img src="../images/members/Airplane.jpg" alt="">
+        <input type="checkbox" class="active-members" id="toggle-images" hidden>
+        <label for="toggle-images" class="activate-members">SHOW ALL</label>
+        <center><img src="../images/members/Airplane.jpg" alt=""></center>
+        <!-- Presenters  -->
         <div class="members-btn">
-            <h2>Pilot</h2>
-            <div class="members-face">
+            <button class="mbtn"><i class="fa-solid fa-user-pilot"></i></i><span>(Presenters)</span></button>
+            <div class="members-face-1">
                 <img src="../images/membersFace/Roy.jpg" alt="">
-                <h2>Jonathan Lim</h2>
+                <h3>Jonathan (Roy) Lim</h3>
+            </div>
+            <div class="members-face-2">
+                
+                <img src="../images/membersFace/Dedeng.jpg" alt="">
+                <h3>Andrei (Dedeng) Balboa</h3>
             </div>
         </div>
+        <!-- Researchers -->
+        <div class="members-btn-2">
+            
+            <button class="mbtn"><i class="fa-solid fa-user-police"></i><span>(Researchers)</span></button>
+            <div class="members-face-3">
+                <img src="../images/membersFace/Manas.jpg" alt="">
+                <h3>AJ (Manas) Magno</h3>
+            </div>
+            <div class="members-face-4">
+                <h3>Francis (Mami) Ortega</h3>
+                <img src="../images/membersFace/Otits.jpg" alt="">
+                
+            </div>
+        </div> 
+        <!-- Coders  -->
+       <div class="members-btn-3"> 
+            <button class="mbtn"><i class="fa-solid fa-user-beard-bolt"></i><span>(Coders)</span></button>
+            <div class="members-face-5">
+                <img src="../images/membersFace/Peppa.jpg" alt="">
+                <h3>Mark (Peppa) Borleo</h3>
+            </div>
+            <div class="members-face-6">
+                <img src="../images/membersFace/Mamalele.jpg" alt="">
+                <h3>Mikko (Mamalele) Borja</h3>
+            </div>
+        </div>
+    </input>
+        
     </div>
 
 
@@ -85,8 +124,8 @@
 
 
           
-<!-- <audio autoplay src="../bg musics/Mamalele.mp3"></audio> -->
-<audio autoplay src="../bg musics/O $IDE MAFIA - 20 DEEP Prod. BRGR (Official Music Video).mp3"></audio>
+<!-- <audio autoplay src="../bg musics/Mamalele.mp3"></audio>  -->
+<!-- <audio autoplay src="../bg musics/O $IDE MAFIA - 20 DEEP Prod. BRGR (Official Music Video).mp3"></audio> -->
           
 </body>
 </html> 

@@ -18,7 +18,7 @@ a {
 p {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: 600;
   font-style: normal;
   text-decoration: none;
 }
@@ -486,7 +486,7 @@ select option {
 
 /* container for famous sites  */
 .container-famous-sites {
-  background: hsla(0, 0%, 70%, 0.668);
+ 
   padding: 2rem 2rem;
   margin: auto 4rem;
   border-radius: 20px;
@@ -496,3 +496,17 @@ select option {
 }
 
 
+.famous-sites-content img{
+  width: 500px;
+}
+
+.famous-sites-content span{
+ color: blue;
+ font-family: "Yellowtail", cursive;
+ font-weight: 400; 
+ background: hsla(0, 0%, 70%, 0.668);
+ position: absolute;
+  text-align: center;
+
+}
+ 
