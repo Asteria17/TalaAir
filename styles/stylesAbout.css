@@ -252,6 +252,19 @@ img.logo {
     margin-bottom: 10px;
 }
 
+.about-content-mv span{
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.about-content-mv{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
 /* buttons  */
 
 .mbtn{
@@ -275,18 +288,20 @@ img.logo {
 /* Members  */
 .members {
   display: block;
-  padding: 20px;
-
+  padding: 0px auto;
   justify-content: center;
   align-items: center;
+  
+}
+.members .members-bg{
+  height: 101vh;
 }
 
 .members img{
   padding: 20px;
   margin: 15px auto;
-  width: 1080px;
-  
-  
+  width: 1100px;
+
 }
 
 .members-btn:hover .members-face-1, 
@@ -389,23 +404,30 @@ img.logo {
 
 .members-btn {
   position: absolute;
-  top: 102rem;
+  top: 95rem;
   right: 13rem;
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
   
 }
 
 .members-btn-2 {
   position: absolute;
-  top: 102rem;
-  right: 32rem;
-  
+  top: 95rem;
+  right: 30rem;
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
 }
 
 .members-btn-3 {
   position: absolute;
-  top: 102rem;
-  right: 50rem;
-  
+  top: 95rem;
+  right: 51rem;
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
 }
 
 
@@ -417,8 +439,8 @@ img.logo {
 
 .activate-members{
   position: absolute;
-  top: 118rem;
-  right: 35rem;
+  top: 109rem;
+  right: 8rem;
   background-color: #060669b3;
   border: 2px solid #422800;
   border-radius: 30px;
@@ -435,6 +457,9 @@ img.logo {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 2%;
 }
 
 /* .members .activate-members:hover {
@@ -448,7 +473,12 @@ img.logo {
   transform: translate(2px, 2px);
 
 }
-
+#toggle-images:checked ~ .members-btn span,
+#toggle-images:checked ~ .members-btn span,
+#toggle-images:checked ~ .members-btn-2 span,
+#toggle-images:checked ~ .members-btn-2 span,
+#toggle-images:checked ~ .members-btn-3 span,
+#toggle-images:checked ~ .members-btn-3 span, 
 #toggle-images:checked ~ .members-btn .members-face-1,
 #toggle-images:checked ~ .members-btn .members-face-2,
 #toggle-images:checked ~ .members-btn-2 .members-face-3,
@@ -464,4 +494,149 @@ img.logo {
 i{
 font-size: 40px;
 color: yellow;
+}
+
+
+/* Footer  */
+
+#main-footer {
+  background: #283673;
+  color: #fff;
+}
+
+#main-footer img {
+  width: 200px;
+}
+
+#main-footer h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#main-footer a {
+  color: #fff;
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container input[type="email"],
+#main-footer .footer-container input[type="submit"] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container > *:last-child {
+  background:hsl(229, 93%, 16%);
+  grid-column: 1 /span 4;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  font-size: 15px;
+}
+
+#main-footer .footer-container > *:last-child span{
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer-contacts .icons{
+  font-size: 22px;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+
+.icons i{
+  font-size: 30px;  
+  margin-right: 10px;
+}
+
+.icons li{
+  margin: 8px auto;
+}
+
+.socmed{
+  padding-left: 35px;
+  padding-top: 10px;
+}
+
+.socmed i{
+  padding-left: 5px;
+  font-size: 40px;
+}
+.socmed i:hover{
+  color: #091f47;
+}
+
+.footer-logo{
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.footer-contacts-col {
+  flex: 2;
+  display: flex;
+  gap: 40px;
+}
+
+
+.footer-payment-feature{
+  text-align: center;
+}
+
+.footer-payment-feature-logo{
+  display: flex;
+  flex: 2;
+}
+
+.footer-payment-feature-logo img{
+  height: 40px;
+}
+
+.footer-payment-feature ul{
+  list-style-type: none;
+}
+.footer-payment-feature li{
+  padding: 3px;
+}
+
+.footer-web-links-list{
+  font-size: 20px;
+  padding: 10px 0px; 
+  overflow: hidden;
+  
+}
+
+
+.footer-web-links-list li{
+  list-style-type: none;
+  margin: 10px 0px;
+  font-size: 22px;
+  overflow-y: hidden;
+}
+
+#list li:hover{
+  background-color:hsla(229, 45%, 45%, 0.645);
+  zoom: 1.1;
+}
+ 
+#list ul li a:hover{
+  color: #091f47;
+}
+
+.footer-web-links-list span{
+  color: #fff;
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
 }
