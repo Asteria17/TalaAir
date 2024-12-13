@@ -29,10 +29,14 @@
     <header>
       <nav id="navbar">
         <h1 class="logo"><a href="index.html"></a>TalaAir</h1>
+
         <ul>
+          
+          <li><a onclick="indexBg.play()"><i class="fa-light fa-music"></i></a></li>
+          <li><a onclick="indexBg.pause()"><i class="fa-light fa-music-slash"></i></a></li>
           <li><a class="current" href="index.html">Home</a></li>
           <li><a href="./HTML Webpages/about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="./HTML Webpages/book.html">BOOK</a></li>
         </ul>
       </nav>
     </header>
@@ -45,8 +49,7 @@
         </h1>
         <p class="lead"></p>
         <!-- <a class="btn" href="play.playAudio">BOOK NOW!</a> -->
-         <button class="btn" onclick="indexBg.play()">Play Music</button>
-         <button class="btn" onclick="indexBg.pause();">Play Music</button>
+         <a href="./HTML Webpages/book.html"><button class="btn">Book Now!</button></a>
       </div>
     </div >
     <br id="packages"/>
@@ -85,13 +88,105 @@
     </div>
 
     <!-- Famous Sites  -->
-    <div class="container-famous-sites">
+    <section class="famous-sites" id="famousLoc">
       <h1>Famous Sites in the Philippines</h1>
-      <div class="famous-sites-content">
-        <a href=""><img src="./images/famousLocations/Banaue.jpg" alt=""></a> 
-        <span>Book Now!</span></div>        
+      <h2><span>(Flight Only)</span></h2>
+      <div class="container-famous-sites">
+        <!-- 1st Site Bohol -->
+        <div class="famous-sites-content">
+          <div class="famous-sites-item">
+            <img src="./images/famousLocations/Bohol.jpg" alt="Banaue">
+            <div class="famous-sites-description">
+              <a href="./HTML Webpages/Webpages for Famous Sites Books/bohol-book.html">
+                  <h1>Bohol</h1>
+                <p>Fly with us to experience the breathtaking Chocolate Hills, pristine white-sand beaches of Panglao, and the enchanting Loboc River. Adventure, relaxation, and unforgettable memories await.</p>
+                <p>📅 Book your flight now! ✈️</p>
+                <p>#ExploreBohol #FlyTalaAir</p>
+            </a>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd site Bicol -->
+        <div class="famous-sites-content">
+          <div class="famous-sites-item">
+            <img src="./images/famousLocations/Bicol.jpg" alt="Banaue">
+            <div class="famous-sites-description">
+              <a href="./HTML Webpages/Webpages for Famous Sites Books/bicol-book.html">
+                  <h1>Bicol</h1>
+                <p>Experience the majestic Mayon Volcano, stunning Caramoan Islands, and thrilling spicy cuisine. Adventure and beauty await you in every corner.</p>
+                <p>📅 Book your flight now! ✈️</p>
+                <p>#ExploreBicol #FlyTalaAir</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd Site Banaue -->
+        <div class="famous-sites-content">
+          <div class="famous-sites-item">
+            <img src="./images/famousLocations/Banaue.jpg" alt="Banaue">
+            <div class="famous-sites-description">
+              <a href="./HTML Webpages/Webpages for Famous Sites Books/banaue-book.html">
+                  <h1>Banaue</h1>
+                <p>Witness the breathtaking Banaue Rice Terraces, a UNESCO World Heritage Site, and immerse yourself in rich culture and history.</p>
+                <br>
+                <p>📅 Book your flight now! ✈️</p>
+                <p>#ExploreBanaue #FlyTalaAir</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      <!-- 4th Site  -->
+        <div class="famous-sites-content">
+          <div class="famous-sites-item">
+              <img src="./images/famousLocations/Cabu City.jpg" alt="Banaue">
+            <div class="famous-sites-description">
+              <a href="./HTML Webpages/Webpages for Famous Sites Books/cebu-book.html">
+                  <h1>Cebu City</h1>
+                <p>Discover stunning beaches, historic landmarks, and vibrant city life in the Queen City of the South.</p>
+                <br>
+                <p>📅 Book your flight now! ✈️</p>
+                <p>#ExploreCebuCity #FlyTalaAir</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 5th Site  -->
+        <div class="famous-sites-content">
+          <div class="famous-sites-item">
+            <img src="./images/famousLocations/Davao City.jpg" alt="Banaue">
+            <div class="famous-sites-description">
+              <a href="./HTML Webpages/Webpages for Famous Sites Books/davao-book.html">
+                  <h1>Davao City</h1>
+                <p>Explore the beauty of Mount Apo, stunning beaches, and the famous Durian. Experience adventure and relaxation all in one place!</p>
+                <br>
+                <p>📅 Book your flight now! ✈️</p>
+                <p>#ExploreDavaoCity #FlyTalaAir</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 6th Site  -->
+        <div class="famous-sites-content">
+          <div class="famous-sites-item">
+            <img src="./images/famousLocations/Vigan City.jpg" alt="Banaue">
+            <div class="famous-sites-description">
+              <a href="./HTML Webpages/Webpages for Famous Sites Books/vigan-book.html">
+                  <h1>Vigan City</h1>
+                <p>Step back in time and explore cobblestone streets, centuries-old architecture, and the charm of this UNESCO World Heritage Site.</p>
+                <br>
+                <p>📅 Book your flight now! ✈️</p>
+                <p>#ExploreVigan #FlyTalaAir</p>
+              </a>
+            </div>
+          </div>
+        </div>
         
+
+        <!-- End of Sites Content -->
       </div>
+    </section>
+        
+
                                                                 
     
            <!-- Footer -->
@@ -111,9 +206,9 @@
                   <li><i class="fa-light fa-mobile"></i>09479303575</li>
                   <li><i class="fa-light fa-circle-envelope"></i>TalaAir@gmail.com</li>
                   <li class="socmed">
-                      <a href=""><i class="fa-brands fa-facebook"></i></a>
-                      <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                      <a href=""><a href="https://www.facebook.com/profile.php?id=61570043246122" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                      <a href=""><a href="https://x.com/TalaAir" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                      <a href="https://www.instagram.com/tala_air_ph/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                 </ul>
               </div>
